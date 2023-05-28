@@ -5,6 +5,7 @@ import Lista from "./Lista";
 
 const Formulario = () => {
   //aqui va la logica
+  let tareasLocalStorage = JSON.parse(localStorage.getItem("listaTareas")) || [];
   // crear un state
   const [arregloTareas, setArregloTareas] = useState([]);
   const [tarea, setTarea] = useState("");

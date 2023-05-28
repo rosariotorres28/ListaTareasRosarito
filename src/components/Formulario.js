@@ -7,7 +7,7 @@ const Formulario = () => {
   //aqui va la logica
   let tareasLocalStorage = JSON.parse(localStorage.getItem("listaTareas")) || [];
   // crear un state
-  const [arregloTareas, setArregloTareas] = useState([]);
+  const [arregloTareas, setArregloTareas] = useState(tareasLocalStorage);
   const [tarea, setTarea] = useState("");
 
   //ciclo de vida del componente
